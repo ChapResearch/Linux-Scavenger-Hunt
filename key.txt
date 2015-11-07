@@ -1,0 +1,34 @@
+Clue: 1
+Location: FirstClue.txt (in ScavengerHunt folder)
+Method: cat FirstClue.txt
+Text: "The port number of SSH"
+
+Clue: 2
+Location: SecondClue.txt (in ScavengerHunt folder)
+Method: cat SecondClue.txt | grep 22
+Text: "stanford.edu IP Address"
+
+Clue: 3
+Location: IP Addresses folder
+Method: ping stanford.edu to discover the IP address is 171.67.215.200; cat 171.67.215.200
+Text: "check what's running for the name of what connects to the server"
+
+Clue: 4
+Location: processes list
+Method: ps -ef | grep putty
+Text: "popular Linux web server"
+
+Clue: 5
+Location: FifthClue folder (in ScavengerHunt folder)
+Method: ls -la | grep -i apache; cat resulting file
+Text: "you can't hide the sixth clue"
+
+Clue: 6
+Location: ScavengerHunt folder
+Method: ls -la to see hidden file .SixthClue.txt
+Text: "find the newest file in the SeventhClue directory"
+
+Clue 7:
+Location: SeventhClue folder
+Method: ls -lt to see the file (with a randomly generated name); cat the file
+Text: "Final Instructions - create a file with the word "DONE" in it. The file should be in /var/www-chapresearch/Seminar/<user>/HuntDone.html where <user> is your first name"
